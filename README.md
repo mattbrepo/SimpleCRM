@@ -1,14 +1,14 @@
 # SimpleCRM
-A simple CRM project to test Laravel and Vue.
+A simple CRM project to test [Laravel](https://laravel.com/) and [Vue](https://vuejs.org/).
 
 **Language: PHP / Javascript**
 
 **Start: 2023**
 
 ## Why
-I wanted to test out the combo [Laravel](https://laravel.com/) + [Vue](https://vuejs.org/). I chose to build a simple [CRM](https://en.wikipedia.org/wiki/Customer_relationship_management) to manage Companies, Contacts, Orders and so on. It's not a finished project since my goal was to try these technologies and become familiar also with [npm](https://www.npmjs.com/) and modern PHP and Javascript development.
+I wanted to test out the combo Laravel + Vue. I chose to build a simple [CRM](https://en.wikipedia.org/wiki/Customer_relationship_management) to manage Companies, Contacts, Orders for software licenses and so on. It's not a finished project since my goal was to try these technologies and become familiar with [npm](https://www.npmjs.com/) and modern PHP and Javascript development.
 
-Login view (accessed on 127.0.0.1:8000):
+Login view (accessed on localhost:8000):
 ![login](/images/login.jpg)
 
 Companies view:
