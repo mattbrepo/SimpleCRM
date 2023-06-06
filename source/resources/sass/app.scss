@@ -1,0 +1,157 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Bootstrap vue
+@import '~bootstrap-vue/src/index.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html,
+.App,
+.vue-template,
+.vertical-center {
+  width: 100%;
+  height: 100%;
+}
+
+.normal-center {
+  justify-content: center;
+  flex-direction: column;    
+  margin: 1em;
+  padding-bottom: 1em; // create a space between last element and footer
+}
+
+body {
+  background: $body-bg !important;
+  min-height: 100vh;
+  font-weight: 400;
+}
+
+footer {
+  background-color: $navigation_backgroud;
+  color: $white;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* --- navigation --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: $navigation_backgroud;
+  padding: 0.5em;
+}
+
+.navbar, .navbar-light, .navbar-nav, .nav-link, .nav-item {
+  color: $white !important;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  padding-right: 0em;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $white;
+}
+
+.dropdown-menu {
+  background-color: $navigation_backgroud;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $white;
+}
+
+.brand {
+   display: flex;
+   align-items: center;
+}
+
+.logout {
+  cursor: pointer;
+}
+
+/* --- login --- */
+.vertical-center {
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;    
+  -webkit-transform: translate(0%, 50%);
+  transform: translate(0%, 50%);
+}
+
+.login-block {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: $white;
+  box-shadow: 0 0 40px $navigation_backgroud;
+  padding: 3%;
+  border-radius: 3%;
+  transition: all .3s;
+}
+
+/* ----- table ------ */
+
+.table-checkbox {
+  font-size: 1.2rem;
+}
+
+.table-date-filter {
+  float:left; 
+  display:flex;
+}
+
+.table-btn {
+  @extend .btn-dark;
+  @extend .btn-sm;
+}
+
+.b-pagination {
+  margin-bottom: 1.5rem;
+}
+
+.page-item.active .page-link {
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+/* ----- button ----- */
+
+.main-btn {
+  @extend .btn-dark;
+  @extend .btn-lg;
+  font-size: 0.95rem;
+}
+
+/* ------------------ */
+
+h1 {
+  margin-bottom: 2rem;
+}
